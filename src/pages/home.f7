@@ -1,0 +1,70 @@
+<template>
+  <div class="page" data-name="home">
+    <!-- Top Navbar -->
+    <div class="navbar navbar-large">
+      <!--<div class="navbar-bg"></div>
+      --><div class="navbar-inner sliding" style="background-color: #fff">
+        <div class="title color_red" id="home_title">Pdf</div>
+        <div class="title-large">
+          <div class="title-large-text" id="home_title1">Pdf</div>
+        </div>
+        <div class="right" id="icons_right" style="display: none;margin-right: var(--f7-navbar-title-margin-left)">
+          <a href="/search">
+            <i id="search_icon" class="f7-icons color_red">search</i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="popup language-popup" style="overflow-y: auto;">
+      <div class="navbar">
+        <div class="navbar-bg"></div>
+        <div class="navbar-inner sliding">
+          <div class="title">Select Language</div>
+        </div>
+      </div>
+      <div attr="0" class="languagecontainer">English</div>
+      <div attr="1" class="languagecontainer">हिन्दी</div><!--Hindi-->
+      <div attr="2" class="languagecontainer">தமிழ்</div><!--tamil-->
+      <div attr="3" class="languagecontainer">മലയാളം</div><!-- malyalam-->
+      <div attr="4" class="languagecontainer">ਪੰਜਾਬੀ</div><!-- punjabi-->
+      <div attr="5" class="languagecontainer">বাংলা</div><!-- bangla-->
+      <div attr="6" class="languagecontainer">ગુજરાતી</div><!-- gujarati-->
+      <div attr="7" class="languagecontainer">Española</div><!-- spanish-->
+      <div attr="8" class="languagecontainer">中文</div><!-- chinese(simplified)-->
+      <div attr="9" class="languagecontainer">русский</div><!--russian-->
+      <div attr="10" class="languagecontainer">portuguesa</div><!--portugese-->
+      <div attr="11" class="languagecontainer">日本語</div><!--japanese-->
+      <div attr="12" class="languagecontainer">한국어</div><!--korean-->
+      <div attr="13" class="languagecontainer">française</div><!--french-->
+      <div attr="14" class="languagecontainer">Deutsche</div><!-- german-->
+      <div attr="15" class="languagecontainer">italiana</div><!--italian-->
+    </div>
+    <!-- Scrollable page content-->
+    <div class="page-content">
+      <div id="MainPagePreloader" class="block block-strong text-align-center no-hairlines">
+        <div class="preloader color-red"></div>
+      </div>
+      <div id="MainPageListContainer" style="display: none" class="list no-hairlines">
+        <ul id="MainPageList">
+
+          
+
+        </ul>
+      </div>
+
+      <div class="list virtual-list no-hairlines">
+      </div>
+
+      <div id="MainPageMessage" style="display: none" class="block block-strong text-align-center no-hairlines">
+        It looks like you do not have any pdf files on your device
+      </div>
+
+
+    </div>
+  </div>
+</template>
+<script>
+export default () => {
+  return $render;
+}
+</script>

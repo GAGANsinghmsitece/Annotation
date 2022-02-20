@@ -1,0 +1,34 @@
+{
+  "cwd": "/home/lubuntu/Projects/hybrid/pdf5",
+  "type": [
+    "web",
+    "pwa",
+    "cordova"
+  ],
+  "name": "S Pdf Reader",
+  "pkg": "me.sapora.pdfreader.pdf.reader",
+  "framework": "core",
+  "template": "blank",
+  "bundler": "vite",
+  "cssPreProcessor": false,
+  "cordova": {
+    "folder": "cordova",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "plugins": [
+      "cordova-plugin-statusbar",
+      "cordova-plugin-keyboard",
+      "cordova-plugin-splashscreen"
+    ]
+  },
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkTheme": false,
+    "iconFonts": true,
+    "fillBars": false
+  },
+  "customBuild": false
+}

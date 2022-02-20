@@ -1,0 +1,33 @@
+<template>
+	<div class="page" data-name="cviewer">
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="navbar-bg"></div>
+				<div class="navbar-title">
+					It is the Pdf File I'm talking about
+				</div>
+			</div>
+		</div>
+		<div class="page-content hide-toolbar-on-scroll">
+			<canvas class="pdf-page" id="pdf-container"></canvas>
+			<div id="text-layer"></div>
+			<div id="annotation-layer"></div>
+		</div>
+		<div class="toolbar toolbar-bottom">
+			<div class="list simple-list" style="margin-top:0px">
+        <ul>
+          <li>
+            <div class="item-cell flex-shrink-3">
+            	<div id="page-slider" class="range-slider"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+		</div>
+	</div>
+</template>
+<script>
+export default () => {
+  return $render;
+}
+</script>

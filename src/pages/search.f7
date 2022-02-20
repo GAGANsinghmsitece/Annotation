@@ -1,0 +1,49 @@
+<template>
+<div class="page" data-name="search">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+            	<a href="#" class="link back icon-only">
+                	<i class="icon icon-back color-red"></i>
+            	</a>
+        	</div>
+			<div id="title" class="title color_red">
+				Search
+			</div>
+			<div class="subnavbar">
+				<form class="searchbar">
+					<div class="searchbar-inner">
+						<div class="searchbar-input-wrap">
+							<input type="search" id="search_input" placeholder="Search Your Pdf files here"/>
+							<i class="searchbar-icon"></i>
+						<span class="input-clear-button"></span>
+					</div>
+					<span class="searchbar-disable-button">Cancel</span>
+					</div>
+				</form>		
+			</div>
+		</div>
+	</div>
+
+	<div class="page-content">
+		<div class="searchbar-backdrop"></div>
+		<div class="block text-align-center" id="search_placeholder" style="font-size: 20px;font-weight: bold;color:#ccc">
+      		<p> Search results will appear here</p>
+    	</div>
+		<!--<div id="MainPageListContainer" style="display: none" class="list no-hairlines">
+        	<ul id="MainPageList">
+			</ul>
+      	</div>-->
+      	<div id="MainPageListContainer" class="list virtual-list no-hairlines">
+        </div>
+      	<div class="block searchbar-not-found" style="display: none;">
+      		<div class="block-inner" id="noresults">No pdf files found</div>
+      	</div>
+	</div>
+</div>
+</template>
+<script>
+export default()=>{
+	return $render;
+}
+</script>
