@@ -5,6 +5,8 @@ Install the node dependencies and run the project using
 
     npm run start
 
+The project used pdfjs implementation in `src/js/pdfWrapper.js`.
+
 ## Framework7 CLI Options
 
 Framework7 app created with following options:
